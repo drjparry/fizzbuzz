@@ -12,6 +12,16 @@ describe 'fizzbuzz' do
   it "returns 'fizzbuzz' when passed 15" do
     expect(15.fizzbuzz).to eq 'fizzbuzz'
   end
+
+  it "returns 'not a number between 1-100'" do
+    expect(-1.fizzbuzz).to eq 'not a number between 1-100'
+  end
+
+  it "returns 'number'" do
+    expect(2.fizzbuzz).to eq 2
+  end
+
+
 end
 
 
